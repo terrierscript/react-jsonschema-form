@@ -1,24 +1,39 @@
-import ArrayFieldTemplate from "../ArrayFieldTemplate";
-import ErrorList from "../ErrorList";
-import Fields from "../Fields";
-import FieldTemplate from "../FieldTemplate";
-import ObjectFieldTemplate from "../ObjectFieldTemplate";
-import Widgets from "../Widgets";
-import { utils } from "@rjsf/core";
-import { ThemeProps } from "../utils";
+import AltDateTimeWidget from "../AltDateTimeWidget/AltDateTimeWidget";
+import AltDateWidget from "../AltDateWidget/AltDateWidget";
+import CheckboxWidget from "../CheckboxWidget/CheckboxWidget";
+import CheckboxesWidget from "../CheckboxesWidget/CheckboxesWidget";
+import ColorWidget from "../ColorWidget/ColorWidget";
+import DateWidget from "../DateWidget/DateWidget";
+import DateTimeWidget from "../DateTimeWidget/DateTimeWidget";
+import EmailWidget from "../EmailWidget/EmailWidget";
+import PasswordWidget from "../PasswordWidget/PasswordWidget";
+import RadioWidget from "../RadioWidget/RadioWidget";
+import RangeWidget from "../RangeWidget/RangeWidget";
+import SelectWidget from "../SelectWidget/SelectWidget";
+import TextareaWidget from "../TextareaWidget/TextareaWidget";
+import TextWidget from "../TextWidget/TextWidget";
+import UpDownWidget from "../UpDownWidget/UpDownWidget";
+import URLWidget from "../URLWidget/URLWidget";
+import SubmitButton from "../SubmitButton/SubmitButton";
 
-const { getDefaultRegistry } = utils;
-
-const { fields, widgets } = getDefaultRegistry();
-
-
-const Theme: ThemeProps = {
-  ArrayFieldTemplate,
-  FieldTemplate,
-  ObjectFieldTemplate,
-  ErrorList,
-  fields: { ...fields, ...Fields },
-  widgets: { ...widgets, ...Widgets },
+const widgets = {
+  AltDateTimeWidget,
+  AltDateWidget,
+  CheckboxWidget,
+  CheckboxesWidget,
+  ColorWidget,
+  DateWidget,
+  DateTimeWidget,
+  EmailWidget,
+  PasswordWidget,
+  RadioWidget,
+  RangeWidget,
+  SelectWidget,
+  TextareaWidget,
+  TextWidget,
+  UpDownWidget,
+  URLWidget,
+  SubmitButton,
 };
 
-export default Theme;
+export default widgets;
